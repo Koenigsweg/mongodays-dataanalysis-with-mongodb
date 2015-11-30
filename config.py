@@ -1,7 +1,7 @@
 """
-presets artist & nemesis
-create sample document simplified_document in ordered fashion
+presets
 """
+from IPython.display import Image
 
 artist = "Taylor Swift"
 nemesis = "Katy Perry"
@@ -29,8 +29,8 @@ class ListTable(list):
     def _repr_html_(self):
         if len(self) == 0:
             return Image(filename='pic/boom.jpg')
-        html = ["<h3>{}</h3>".format(self.title) if self.title else ""]
-        html.append("<table>")
+        html = ["<h3>{}</h3>".format(self.title) if self.title else "",
+                "<table>"]
         for row in self:
             html.append("<tr>")
 
