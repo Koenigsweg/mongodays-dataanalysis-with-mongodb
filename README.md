@@ -5,6 +5,7 @@
 * mongoDB days Germany, Munich October 2015
 * PySS15, Ibaeta University Campus of San Sebastian, October 2015
 * mongoDB days Silicon Valley, San José, December 2015
+* Heise Developer World, CeBIT Hannover, Germany, March 2016
 * mongoDB Aggergation work shop meet-up
 
 Slides can be downloaded from [here](https://drive.google.com/open?id=0BxD_IyXfaOuVemtaNmRoMF9TcVU "Data Analysis with mongoDB")
