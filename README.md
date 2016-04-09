@@ -5,6 +5,7 @@
 * mongoDB days Germany, Munich October 2015
 * PySS15, Ibaeta University Campus of San Sebastian, October 2015
 * mongoDB days Silicon Valley, San José, December 2015
+* mongoDB Aggergation work shop meet-up
 
 Slides can be downloaded from [here](https://drive.google.com/open?id=0BxD_IyXfaOuVemtaNmRoMF9TcVU "Data Analysis with mongoDB")
 
@@ -19,7 +20,7 @@ No support for setting things up. Google is your friend.
 
 ### requirements:
 
-* mongodb installed (version 3.0+)    
+* mongodb installed (version 3.2+)    
 * python 3.4+ (everything should also work on 2.7, but not tested)
 * one alternative, recently added example requires mongoDB 3.2 already (Dec 2015)
 

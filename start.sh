@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 # create subfolder data for local mongod instance and start mongod
-# exit if error
-set e
 thisdir=`pwd`
+# create folder for mongod
 dbpath="$thisdir""/data"
 mkdir -p "$dbpath"
 logpath="$dbpath""/mongodb.log"
-mongod --dbpath "$dbpath" --logpath "$logpath" --storageEngine wiredTiger --wiredTigerCacheSizeGB 2 --wiredTigerJournalCompressor zlib --directoryperdb --fork
+# start mongod instance and fork
+mongod --dbpath "$dbpath" --logpath "$logpath"  --fork
 echo "started mongod instance sucessfully"
+# import data from dump into local mongod
+mongorestore dump/playlists.bson -d db -c playlists
+mongorestore dump/exchangerates.bson -d db -c exchangerates
+echo "done"
