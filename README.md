@@ -23,7 +23,6 @@ No support for setting things up. Google is your friend.
 
 * mongodb installed (version 3.2+)    
 * python 3.4+ (everything should also work on 2.7, but not tested)
-* one alternative, recently added example requires mongoDB 3.2 already (Dec 2015)
 
 the data is located in data/
 
